@@ -8,7 +8,7 @@
     background: url(../images/pizza.jpg);
     background-size: 100% 100%;
     color:white;
-    height: 700px;
+    height: 600px;
     width: 100%;
 
 }
@@ -16,7 +16,22 @@
     background: url(../images/pizza_fresca.jpg);
     background-size: 100% 100%;
     color:white;
-    height: 700px;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+}
+#contact {
+    background: url(../images/izza.jpeg);
+    background-size: 100% 100%;
+    color:white;
+    height: 400px;
     width: 100%;
 
+}     
+ 
+.color {
+    color: orangered;
+}
+.menu {
+    text-align: center;
 }
