@@ -1,0 +1,22 @@
+.container {
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+#front {
+    background: url(../images/pizza.jpg);
+    background-size: 100% 100%;
+    color:white;
+    height: 700px;
+    width: 100%;
+
+}
+#ourmenu {
+    background: url(../images/concept.webp);
+    background-size: 100% 100%;
+    color:white;
+    height: 700px;
+    width: 100%;
+
+}
