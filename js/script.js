@@ -1,10 +1,10 @@
 $(document).ready(function () {
 
     var toppingsPrices = {Onion:10, Beef:100, Vegetable:100,Chicken:200};
-    var crustPrices = {crispy: 100, stuffed:200, glutten_free: 300};
+    var crustPrices = {crispy: 100, stuffed: 200, glutten_free: 300};
 
     $.each(toppingsPrices,function(k,v){
-        var option = '<option value="'+k+'">'+k+'</option>';
+        var option = '<option value="'+k+'">'+k+' @ '+v+' Ksh</option>';
         $("#select-toppings").append(option);
     });
 
@@ -47,12 +47,12 @@ Pizza.prototype.ToppingsPrice = function(){
 
 
 Pizza.prototype.CrustPrice = function(){
-    if(this.size=="large"){
-        return crustPrices[this.crust];
-    }else if(this.size=="medium"){
-        return crustPrices[this.crust];
+    if(this.crust=="crispy"){
+        return 100;
+    }else if(this.crust=="stuffed"){
+        return 200;
     }else{
-        return crustPrices[this.crust];
+        return 300;
     }
 }
 
@@ -74,7 +74,7 @@ $("#btn-add-to-cart").click(function(e){
     var pizza = new Pizza(size, crust, toppings);
 
     var sizePrice = pizza.SizePrice();
-    var crustPrice = pizza.crustPrice();
+    var crustPrice = pizza.CrustPrice();
     var toppingPrice = pizza.ToppingsPrice();
     var total = (sizePrice + crustPrice + toppingPrice ) * quantity;
 
