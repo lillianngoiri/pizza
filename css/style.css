@@ -36,8 +36,21 @@
     text-align: center;
 }
 #menu1 {
-    background: url(../images/dark.jpeg)
+    background: url(../images/dark.jpeg);
+    background-size: 100% 100%;
+    height: 500px;
+    width: 700%;
+ 
 }
 .container2 {
     text-align: center;
+}
+#add {
+float: left;
+}
+.btn {
+    float: left;
+}
+#pic {
+    background: url(../images/dark.jpeg)
 }

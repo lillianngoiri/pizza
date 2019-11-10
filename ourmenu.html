@@ -32,77 +32,98 @@
 
 
         <div class="container2">
-
             <h2>MENU</h2>
-                <form class="menu" action="index.html" method="post" id="menu1">
+            <form class="menu" action="index.html" method="post" id="menu1">
 
-                    <div class="row">
-                        <div class="color"><label>SIZE</label></div>
-                        <div class="col-sm-5">
+                <div class="row">
+                    <div class="color"><label>SIZE</label></div>
+                    <div class="col-md">
 
-                            <select class="form-control" name="size" required>
-                                <option value="small" id="small">Small</option>
-                                <option value="medium" id="medium">Medium</option>
-                                <option value="large" id="large">Large</option>
-                            </select>
-                            <span class="error" id="size-error"></span>
-                        </div>
-                    </div><br><br>
+                        <select class="form-control" name="size" required>
+                            <option value="small" id="small">Small</option>
+                            <option value="medium" id="medium">Medium</option>
+                            <option value="large" id="large">Large</option>
+                        </select>
+                        <span class="error" id="size-error"></span>
+                    </div>
+                </div><br><br>
 
-                    <div class="row">
-                        <div class="color"><label>CRUST</label></div>
-                        <div class="col-sm-5">
+                <div class="row">
+                    <div class="color"><label>CRUST</label></div>
+                    <div class="col-md">
 
-                            <select class="form-control" name="crust" required>
-                                <option value="cripsy" id="cripsy"> Cripsy </option>
-                                <option value="stuffed" id="stuffe">Stuffed </option>
-                                <option value="glutten-free" id="glutten-free">Glutten-free</option>
-                            </select>
-                            <span class="error" id="crust-error"></span>
-                        </div>
-                    </div><br><br>
-
-
-                    <div class="row">
-                        <div class="color"><label>TOPPINGS</label></div>
-
-                        <div class="col-sm-5">
-
-                            <select class="form-control" name="toppings" required>
-                                <option value="chicken" id="chicken">Chicken</option>
-                                <option value="beef" id="beef">Beef</option>
-                                <option value="vegetables" id="vegetables">vegetables</option>
-                            </select>
-                            <span class="error" id="toppings-error"></span>
-
-                        </div>
-                    </div><br><br>
-
-                    <span class="btn btn-primary" id="add">Another pizza</span>
-
-                    <button type="submit" class="btn btn-success">Add</button><br><br>
-
-                </form>
-
-            <div class="row">
-                <input type="submit" id="btn" class="btn-primary float-right" name="button" value="submit">
-            </div><br><br>
+                        <select class="form-control" name="crust" required>
+                            <option value="cripsy" id="cripsy"> Cripsy </option>
+                            <option value="stuffed" id="stuffe">Stuffed </option>
+                            <option value="glutten-free" id="glutten-free">Glutten-free</option>
+                        </select>
+                        <span class="error" id="crust-error"></span>
+                    </div>
+                </div><br><br>
 
 
+                <div class="row">
+                    <div class="color"><label>TOPPINGS</label></div>
+
+                    <div class="col-md">
+
+                        <select class="form-control" name="toppings" required>
+                            <option value="chicken" id="chicken">Chicken</option>
+                            <option value="beef" id="beef">Beef</option>
+                            <option value="vegetables" id="vegetables">vegetables</option>
+                        </select>
+                        <span class="error" id="toppings-error"></span>
+
+                    </div>
+                </div><br><br>
+
+                <span class="btn btn-primary" id="add">Another pizza</span>
+
+                <button type="submit" class="btn btn-success">Add</button><br><br>
+
+            </form>
+        </div>
+
+        <div class="order" id="orders">
+            <h1 class="text-center" id="pizzadd">Order Summary</h1>
+            <h2 class="text-center pizzadd">Your order is as follows:</h2>
+            <ol id="list" class="text-center sum">
+            </ol>
 
 
-            <div class="reach" id="cnt">
-                <footer class="reach-us text-center">
-                    <img src="images/twitter.png" alt="twitter">
-                    <img src="images/facebook.png" alt="facebook">
-                    <img src="images/skype.png" alt="skype">
-                    <img src="images/you_tube.png" alt="you_tube">
+            <div class="cdata-overlay" id="pic">
+                <div class="customerdata row">
+                    <div class="col-sm-3"></div>
+                    <form action="" class="form-group col-sm-6 data" id="data">
+                        <input type="text" class="form-control cdata" id="name" placeholder="Enter your Name:"><br><br>
+                        <input type="text" class="form-control cdata" id="phone"
+                            placeholder="Enter your phone number: "><br><br>
+                        <input type="text" class="form-control cdata" id="location"
+                            placeholder="Enter the location: "><br><br>
+                        <button class="btn bg-info text-center d-block mx-auto go" id="go" type="submit">Make
+                            Delivery</button>
+                        <button class="bnt bg-info text-center d-block mx-auto go" id="do" type="submit">Pick
+                            Up</button>"
+                    </form>
 
-                    <br>YAMMY PIZZA INN<br>2019<br>
-                </footer>
+                    <div class="col-sm-3"></div>
+                </div>
             </div>
 
+        </div><br><br><br>
+
+        <div class="reach" id="cnt">
+            <footer class="reach-us text-center">
+                <img src="images/twitter.png" alt="twitter">
+                <img src="images/facebook.png" alt="facebook">
+                <img src="images/skype.png" alt="skype">
+                <img src="images/you_tube.png" alt="you_tube">
+
+                <br>YAMMY PIZZA INN<br>2019<br>
+            </footer>
         </div>
+
+
         <script src="js/jquery-3.4.1.js"></script>
         <script src="js/script.js"></script>
 </body>
