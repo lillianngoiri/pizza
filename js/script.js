@@ -1,5 +1,13 @@
 $(document).ready(function () {
 
+    var toppingsPrices = {Onion:10, Beef:100, Vegetable:100,Chicken:200};
+
+    $.each(toppingsPrices,function(k,v){
+        var option = '<option value="'+k+'">'+k+'</option>';
+        $("#select-toppings").append(option);
+    });
+
+
 
 
 function Pizza(size, crust, toppings){
@@ -9,7 +17,7 @@ function Pizza(size, crust, toppings){
 }
  
 
-Pizza.prototype.CrustPrice = function(){
+Pizza.prototype.SizePrice = function(){
 
     if(this.size==="large"){
         return 900;
@@ -20,7 +28,7 @@ Pizza.prototype.CrustPrice = function(){
     }
 }
 
-var toppingsPrices = {onion:10, beef:100};
+
 
 Pizza.prototype.ToppingsPrice = function(){
     if(this.size=="large"){
@@ -34,9 +42,28 @@ Pizza.prototype.ToppingsPrice = function(){
 
 var pizza1 = new Pizza("large", "crispy","onion");
 
+console.log(pizza1.size+ " "+pizza1.SizePrice() + " ngoiri "+ pizza1.ToppingsPrice());
 
 
-console.log(pizza1.size+ " "+pizza1.CrustPrice() + " ngoiri "+ pizza1.ToppingsPrice());
 
+$("#btn-add-to-cart").click(function(e){
+    e.preventDefault();
+   
+    var size = $("select[name='size']").val();
+    var crust = $("select[name='crust']").val();
+    var toppings = $("select[name='toppings']").val();
+    var quantity = $("input[name='quantity']").val();
+
+    var pizza = new Pizza(size, crust,toppings);
+
+    var sizePrice = pizza.SizePrice();
+    var toppingPrice = pizza.ToppingsPrice();
+    var total = (sizePrice + toppingPrice ) * quantity;
+
+    var orderItem = "<li>"+quantity+" "+size+" "+crust+" with "+toppings + " toppings <br> Total Ksh ."+total+"</li>";
+
+    $("#list").append(orderItem);
+
+})
 
 });

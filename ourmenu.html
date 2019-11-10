@@ -33,7 +33,7 @@
         <div class="container2">
             <h2>MENU</h2>
 
-            <form class="menu" action="index.html" method="post" id="menu1"><br><br>
+            <form class="menu" action="" method="post" id="menu1"><br><br>
 
 
                 <div class="row">
@@ -42,9 +42,9 @@
                     </div>
                     <div class="col-sm-3">
                         <select class="form-control" name="size" required>
-                            <option value="small" id="small">Small</option>
-                            <option value="medium" id="medium">Medium</option>
-                            <option value="large" id="large">Large</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
                         </select>
                         <span class="error" id="size-error"></span>
                     </div>
@@ -70,10 +70,7 @@
                         <label>TOPPINGS</label>
                     </div>
                     <div class="col-sm-3">
-                        <select class="form-control" name="toppings" required>
-                            <option value="chicken" id="chicken">Chicken</option>
-                            <option value="beef" id="beef">Beef</option>
-                            <option value="vegetables" id="vegetables">vegetables</option>
+                        <select class="form-control" id="select-toppings" name="toppings" required>                       
                         </select>
                         <span class="error" id="toppings-error"></span>
                     </div>
@@ -83,7 +80,7 @@
                         <label>QUANTITY</label>
                     </div>
                     <div class="col-sm-3">
-                        <input type="number" value="1" class="form-control " min="1" max="10" />
+                        <input type="number" name="quantity" value="1" class="form-control " min="1" max="10" />
                         <span class="error" id="toppings-error"></span>
                     </div>
                 </div><br><br>
@@ -93,7 +90,7 @@
 
                     </div>
                     <div class="col-sm-3">
-                        <button type="button" class="btn btn-success float-right">Add</button>
+                        <button type="submit" id="btn-add-to-cart" class="btn btn-success float-right">Add</button>
                     </div>
 
                     <br><br>
@@ -104,9 +101,7 @@
         <div class="order" id="orders">
             <h1 class="text-center" id="pizzadd">Order Summary</h1>
 
-            <ol id="list" class="text-center sum">
-                You have 0 items in your cart
-            </ol>
+            <ol id="list" class="text-center sum"></ol>
 
 
             <div class="cdata-overlay" id="pic">
