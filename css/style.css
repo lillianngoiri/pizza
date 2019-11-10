@@ -7,7 +7,7 @@
 #front {
     background: url(../images/pizza.jpg);
     background-size: 100% 100%;
-    color:white;
+    color: black;
     height: 600px;
     width: 100%;
 
@@ -15,7 +15,7 @@
 #ourmenu {
     background: url(../images/pizza_fresca.jpg);
     background-size: 100% 100%;
-    color:white;
+    color: black;
     height: 400px;
     width: 100%;
     text-align: center;
@@ -23,7 +23,7 @@
 #contact {
     background: url(../images/izza.jpeg);
     background-size: 100% 100%;
-    color:white;
+    color:blue;
     height: 400px;
     width: 100%;
 
