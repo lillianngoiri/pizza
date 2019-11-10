@@ -85,3 +85,24 @@ $("#btn-add-to-cart").click(function(e){
 })
 
 });
+$("#go").click(function (event) {
+    event.preventDefault();
+    var blanks = ["name", "phone_number", "location"];
+    var input = [];
+    blanks.forEach(function (blank) {
+        input.push($("#" + blank).val());
+    });
+    alert("Your order will be delivered at "+ input[2] +"");
+    $("#go")[2].reset();
+});
+
+$("#do").click(function (event) {
+    event.preventDefault();
+    var blanks = ["name", "phone_number", "location"];
+    var input = [];
+    blanks.forEach(function (blank) {
+        input.push($("#" + blank).val());
+    });
+    alert("Welcome to Yammy Pizza Inn at Kasarani next to TRM Mall");
+    $("#do").reset();
+});
