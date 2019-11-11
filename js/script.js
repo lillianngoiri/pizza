@@ -92,7 +92,7 @@ $("#go").click(function (event) {
     blanks.forEach(function (blank) {
         input.push($("#" + blank).val());
     });
-    alert("Your order will be delivered at "+ input[2] +"");
+    alert("Your order will be delivered at "+ input[2] +" and the delivery will cost you 200 Ksh");
     $("#go")[2].reset();
 });
 
