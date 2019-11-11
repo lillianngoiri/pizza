@@ -85,7 +85,7 @@ $("#btn-add-to-cart").click(function(e){
 })
 
 });
-$("#go").click(function (event) {
+$("#data").submit(function (event) {
     event.preventDefault();
     var blanks = ["name", "phone_number", "location"];
     var input = [];
