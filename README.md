@@ -8,7 +8,7 @@
 |Inputs       | Description                             |
 |-------------|-----------------------------------------|
 |Name         | Enter your name.                        |
-|Phone number | Enter your mail.                        |
+|Phone number | Enter your phone number.                |
 |Location     | Enter your location                     |
 |Menu         | Select the options you want             | 
 
