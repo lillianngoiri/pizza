@@ -5,7 +5,12 @@
 ## Authors Name.
 - LILLIAN NGOIRI
 ## BDD
-
+|Inputs       | Description                             |
+|-------------|-----------------------------------------|
+|Name         | Enter your name.                        |
+|Phone number | Enter your mail.                        |
+|Location     | Enter your location                     |
+|Menu         | Select the options you want             | 
 
 ## Setup Instruction
 - You need to have a github account so that you can deploy the project and get a live link.
