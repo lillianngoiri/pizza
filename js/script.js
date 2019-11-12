@@ -78,7 +78,7 @@ $(document).ready(function () {
         var crustPrice = pizza.CrustPrice();
         var toppingPrice = pizza.ToppingsPrice();
         var deliveryCost = 200;
-        var total = (sizePrice + crustPrice + toppingPrice) * quantity +deliveryCost;
+        var total = (sizePrice + crustPrice + toppingPrice) * quantity ;
 
         var orderItem = "<li>" + quantity + " " + size + " " + 'pizza ,' + "  " + crust + " with " + toppings + " toppings <br> Total Ksh ." + total + "</li>";
 
@@ -92,7 +92,7 @@ $("#go").click(function (event) {
     alert("The delivery cost is Kshs 200 ");
     // var a = total + 200;
     var blanks = document.getElementById("location").value;
-    alert("Your order includes a delivery fee of 200 Ksh and will be delivered to" +" "+blanks);
+    alert("Your order will include a delivery fee of 200 Ksh and will be delivered to" +" "+blanks);
 });
 
     // var blanks = ["name", "phone_number", "location"];
