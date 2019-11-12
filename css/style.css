@@ -1,0 +1,58 @@
+.container {
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+#front {
+    background: url(../images/pizza.jpg);
+    background-size: 100% 100%;
+    color: black;
+    height: 600px;
+    width: 100%;
+
+}
+#ourmenu {
+    background: url(../images/pizza_fresca.jpg);
+    background-size: 100% 100%;
+    color: black;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+}
+#contact {
+    background: url(../images/izza.jpeg);
+    background-size: 100% 100%;
+    color:blue;
+    height: 400px;
+    width: 100%;
+
+}     
+ 
+.color {
+    color: orangered;
+}
+.menu {
+    text-align: center;
+}
+#menu1 {
+    background: url(../images/dark.jpeg);
+    text-align: center;
+    background-size: 100% 100%;
+    height: auto;
+    
+    width: 100%;
+ 
+}
+.container2 {
+    text-align: center;
+}
+#add {
+float: left;
+}
+.btn {
+    float: left;
+}
+#pic {
+    background: url(../images/dark.jpeg)
+}

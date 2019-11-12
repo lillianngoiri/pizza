@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pizza inn</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="our" id="ourmenu">
+            <div class="navbar" id="nav1">
+                <a href="index.html">Home</a>
+                <a href="ourmenu.html">Our Menu</a>
+                <a href="contact.html">Contact</a>
+                <a href="javascript:void(0);" class="icon1" onclick="myFunction()"></a>
+            </div>
+
+            <br><br><br><br><br><br>
+
+            <h1>YAMMY PIZZA INN</h1>
+            <P>Best Services Best Pizza !!!</P>
+        </div><br><br><br><br>
+
+
+        <div class="container">
+            <h2>MENU</h2>
+
+            <form class="menu" action="" method="post" id="menu1"><br><br>
+
+
+                <div class="row">
+                    <div class="col-sm-3 color">
+                        <label>SIZE</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <select class="form-control" name="size" required>
+                            <option value="small">Small @ 300 Ksh</option>
+                            <option value="medium">Medium @ 500 Ksh</option>
+                            <option value="large">Large @ 900 Ksh</option>
+                        </select>
+                        <span class="error" id="size-error"></span>
+                    </div>
+                </div><br><br>
+
+                <div class="row">
+                    <div class="col-sm-3 color">
+                        <label>CRUST</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <select class="form-control" name="crust" required>
+                            <option value="cripsy" id="cripsy"> Cripsy @ 100 Ksh</option>
+                            <option value="stuffed" id="stuffe">Stuffed @ 200 Ksh </option>
+                            <option value="glutten-free" id="glutten-free">Glutten-free @ 300 Ksh</option>
+                        </select>
+                        <span class="error" id="crust-error"></span>
+                    </div>
+                </div><br><br>
+
+
+                <div class="row">
+                    <div class="col-sm-3 color">
+                        <label>TOPPINGS</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <select class="form-control" id="select-toppings" name="toppings" required>
+                        </select>
+                        <span class="error" id="toppings-error"></span>
+                    </div>
+                </div><br><br>
+                <div class="row">
+                    <div class="col-sm-3 color">
+                        <label>QUANTITY</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="number" name="quantity" value="1" class="form-control " min="1" max="10" />
+                        <span class="error" id="toppings-error"></span>
+                    </div>
+                </div><br><br>
+
+                <div class="row">
+                    <div class="col-sm-3 color">
+
+                    </div>
+                    <div class="col-sm-3">
+                        <button type="submit" id="btn-add-to-cart" class="btn btn-success float-right">Add</button>
+                    </div>
+
+                    <br><br>
+
+            </form>
+        </div>
+        <div class="container">
+
+        <div class="order" id="orders">
+            <h1 class="text-center" id="pizzadd">Order Summary</h1>
+
+            <ol id="list" class="text-center sum"></ol>
+
+
+            <div class="cdata-overlay" id="pic">
+                <div class="customerdata row">
+
+                    <div class="col-sm-3"></div>
+
+                    <form action="" class="form-group col-sm-6 data" id=" ">
+                        <h1 class="text-center text-danger">Delivery address</h1>
+                        <input type="text" class="form-control cdata" id="name" placeholder="Enter your Name:"
+                            required><br><br>
+                        <input type="text" class="form-control cdata" id="phone" placeholder="Enter your phone number:"
+                            required><br><br>
+                        <input type="text" class="form-control cdata" id="location" placeholder="Enter the location: "
+                            required><br><br>
+                        <button class="btn bg-info text-center d-block mx-auto go" id="go" type="submit">Make
+                            Delivery</button>
+                        <button class="bnt bg-info text-center d-block mx-auto go" id="do" type="button">Pick
+                            Up</button>
+                    </form>
+
+                    <div class="col-sm-3"></div>
+                </div>
+            </div>
+
+        </div><br><br><br>
+
+        <div class="reach" id="cnt">
+            <footer class="reach-us text-center">
+                <img src="images/twitter.png" alt="twitter">
+                <img src="images/facebook.png" alt="facebook">
+                <img src="images/skype.png" alt="skype">
+                <img src="images/you_tube.png" alt="you_tube">
+
+                <br>YAMMY PIZZA INN<br>2019<br>
+            </footer>
+        </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
