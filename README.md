@@ -9,6 +9,7 @@
 - At the home page you will just click on the our menu bar and it will take you to our favorite options of pizza.
 ![yes](images/yes.png)
 - At the menu you can select the size, toppings and the crust and the checkout to get the total.
+
 |Inputs       | Description                             |
 |-------------|-----------------------------------------|
 |Name         | Enter your name.                        |
